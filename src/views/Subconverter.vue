@@ -332,12 +332,14 @@ export default {
           "自动判断客户端": "auto",
         },
         shortTypes: {
+          "自用": "https://subs.cdn.haah.net",
           "v1.mk": "https://v1.mk/short",
           "d1.mk": "https://d1.mk/short",
           "dlj.tf": "https://dlj.tf/short",
           "suo.yt": "https://suo.yt/short",
         },
         customBackend: {
+          "辉哥自用": "https://subapi.haah.net",
           "CM负载均衡后端【vless reality+hy1+hy2】": "https://subapi.cmliussss.net",
           "CM应急备用后端【vless reality+hy1+hy2】": "https://subapi.fxxk.dedyn.io",
           "肥羊增强型后端【vless reality+hy1+hy2】": "https://url.v1.mk",
@@ -347,6 +349,7 @@ export default {
           "sub-web作者提供": "https://api.wcc.best",
         },
         backendOptions: [
+          { value: "https://subapi.haah.net" },
           { value: "https://subapi.cmliussss.net" },
           { value: "https://subapi.fxxk.dedyn.io" },
           { value: "https://url.v1.mk" },
@@ -356,6 +359,19 @@ export default {
           { value: "https://api.wcc.best" },
         ],
         remoteConfig: [
+          {
+            label: "自用规则",
+            options: [
+              {
+                label: "基础",
+                value: "https://raw-github.cdn.haah.net/ACL4SSR/ACL4SSR/master/Clash/config/ACL4SSR_Online.ini"
+              },
+              {
+                label: "融合",
+                value: "https://raw-github.cdn.haah.net/ACL4SSR/ACL4SSR/master/Clash/config/ACL4SSR_Online_Full.ini"
+              }
+            ]
+          },
           {
             label: "CM规则",
             options: [
@@ -1310,3 +1326,4 @@ export default {
   }
 };
 </script>
+
