@@ -802,9 +802,9 @@ export default {
       form: {
         sourceSubUrl: "",
         clientType: "",
-        customBackend: this.getUrlParam() == "" ? "https://url.v1.mk" : this.getUrlParam(),
-        shortType: "https://v1.mk/short",
-        remoteConfig: "https://raw.githubusercontent.com/cmliu/ACL4SSR/main/Clash/config/ACL4SSR_Online.ini",
+        customBackend: this.getUrlParam() == "" ? "https://subapi.haah.net" : this.getUrlParam(),
+        shortType: "https://subs.cdn.haah.net",
+        remoteConfig: "https://raw-github.cdn.haah.net/ACL4SSR/ACL4SSR/master/Clash/config/ACL4SSR_Online.ini",
         excludeRemarks: "",
         includeRemarks: "",
         filename: "",
@@ -1326,4 +1326,5 @@ export default {
   }
 };
 </script>
+
 
