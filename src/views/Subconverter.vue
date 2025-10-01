@@ -803,7 +803,7 @@ export default {
         sourceSubUrl: "",
         clientType: "",
         customBackend: this.getUrlParam() == "" ? "https://sub-api.cdn.haah.net" : this.getUrlParam(),
-        shortType: "https://subs.cdn.haah.net",
+        shortType: "https://subs.cdn.haah.net/short",
         remoteConfig: "https://raw-github.cdn.haah.net/ACL4SSR/ACL4SSR/master/Clash/config/ACL4SSR_Online.ini",
         excludeRemarks: "",
         includeRemarks: "",
@@ -1326,6 +1326,7 @@ export default {
   }
 };
 </script>
+
 
 
 
